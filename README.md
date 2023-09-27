@@ -11,7 +11,7 @@ Passionate about shaping the nexus of development and operations, I bring over 1
 
 ### 🔍 Expertise
 
-- **CI/CD & Application Development Lifecycle:** Deep understanding of end-to-end CI/CD practices, right from code commits to deployment, leveraging tools like GitHub Actions, Jenkins, and Jira.
+- **CI/CD & Application Development Lifecycle:** Deep understanding of end-to-end CI/CD practices, right from code commit to deployment, leveraging tools like GitHub Actions, Jenkins, and Jira.
   
 - **Infrastructure as Code (IaC):** Proficient in Terraform and Packer, ensuring seamless, consistent, and scalable infrastructure deployments, especially on AWS Cloud.
 
@@ -39,43 +39,56 @@ A comprehensive set of pipelines, integrating GitHub Actions, Jenkins, and Jira 
     Maintain a current README.md with content from the action.yml file
     This is a CLI tool and GitHub Action that reads in the details from a GitHub Action's `action.yml` file and updates the `README.md` file with the `name`, `description`, `usage`, `inputs`, `outputs`, and examples of the action. Configuration can be provided via a `.ghadocs.json` file stored in the root directory of the Action's repository, via the command line when using the cli, or via the `with:` section of this Action.
     This tool uses markdown comments as delimiting tokens within the `README.md` file to determine where to place the generated content.
-- #### A GitHub Action for transitioning Jira issue state
+- #### A GitHub Action for transitioning the Jira issue state
   🔗[bitflight-devops/github-action-jira-transition-manager](https://github.com/bitflight-devops/github-action-jira-transition-manager)
   
     This GitHub Action will transition the list of Jira issues provided between states, or it will display the available transitions and the current issue state. i.e. move an issue state from *In Progress* -> *Ready For Review*
 - #### A GitHub Action for finding and presenting Jira issues in Pull Requests
   🔗[bitflight-devops/github-action-jira-find-issue-keys](https://github.com/bitflight-devops/github-action-jira-find-issue-keys)
   
-    This GitHub Action will find the issue keys in the GitHub event, from a commit, between two branches or tags, or from the commits within the current pull request and return them as a comma separated list. 
+    This GitHub Action will find the issue keys in the GitHub event, from a commit, between two branches or tags, or from the commits within the current pull request and return them as a comma-separated list. 
     It also optionally allows you to:
     - Update the current Pull Request title to include the Jira issue keys that it finds
-    - Update the Pull Request body to include a list of Jira Issues that include the Issue name with a link to the Jira issue itself, its state and summary.
-- #### a CLI, GitHub Action, and Shell plugin that provides library of shell functions
+    - Update the Pull Request body to include a list of Jira Issues that include the Issue name with a link to the Jira issue itself, its state, and summary.
+- #### a CLI, GitHub Action, and Shell plugin that provides a library of shell functions
   🔗[bitflight-devops/shell-scripts](https://github.com/bitflight-devops/shell-scripts)
   
-    A growing library of shell functions that strives to be cross platform (mac, linux) and cross shell (bash, zsh, sh)
+    A growing library of shell functions that strives to be cross-platform (Mac, Linux) and cross-shell (bash, zsh, sh)
     ##### Libraries included cover:
     - **GitHub Core Functions** - creates single commands for interacting with GitHub and GitHub actions
     - **AWS Elastic Beanstalk Functions** - creates functions for controlling, deploying, logging, swapping, and building AWS Elastic Beanstalk environments
     - **General Shell Utility Functions** - creates functions for simplifying and clarifying complex shell commands
-    - **Color and Emoji Variables** - creates shell environment variables for controlling the color of text, and displaying or escaping unicode emojis
-    - **Java Functions** - creates functions for managing versioning and tagging in a pom file
-    - **Log Functions** - creates a standard set of logging functions for streaming logs to console, or files, or annotated for GitHub Actions, includes timestamping, file and function tracebacks, and colorizing.
-    - **OSX Utiility Functions** - creates functions that assist with downloading, fixing security issues, and installing scripts
-    - **Remote Utility Functions** - creates functions that simplify downloading or streaming files across multiple operating systems, as well as ssh utilities for creating or connecting to bastion hosts and streaming files via those hosts, connecting to mysql servers, and streaming data back to those servers
+    - **Color and Emoji Variables** - creates shell environment variables for controlling the color of text, and displaying or escaping Unicode emojis
+    - **Java Functions** - creates functions for managing versioning and tagging in a POM file
+    - **Log Functions** - creates a standard set of logging functions for streaming logs to console, or files, or annotated for GitHub Actions, including timestamping, file and function tracebacks, and colorizing.
+    - **OSX Utility Functions** - creates functions that assist with downloading, fixing security issues, and installing scripts
+    - **Remote Utility Functions** - creates functions that simplify downloading or streaming files across multiple operating systems, as well as SSH utilities for creating or connecting to bastion hosts and streaming files via those hosts, connecting to MySQL servers, and streaming data back to those servers
     - **String Functions** - creates string handling functions for modifying text such as changing it to upper or lower case, trimming whitespace, or performing regex matching or extracting
-    - **System Functions** - creates functions that help manage OS configuration, such as gracefully updating the PATH variable, modifying dot files and rc files in a non destructive way, checking for sudo access, running commands that can automatically use sudo as required, installing and caching packages via the package managers pip, yum, apt, brew, and mpm in the most performant way possible
+    - **System Functions** - creates functions that help manage OS configuration, such as gracefully updating the PATH variable, modifying dotfiles, and rc files in a non-destructive way, checking for sudo access, running commands that can automatically use sudo as required, installing and caching packages via the package managers pip, yum, apt, brew, and mpm in the most performant way possible
     - **Tracing Functions** - creates functions that allow for toggling tracing on and off for shell debugging
-    - **Yaml Functions** - creates functions for parsing and extracting data from yaml files
+    - **Yaml Functions** - creates functions for parsing and extracting data from YAML files
 - #### A GitHub Action for updating a Jira Issue Fixversion, or for updating the GitHub Milestone to match the FixVersion of the issue
   🔗[bitflight-devops/shell-scripts](https://github.com/bitflight-devops/github-action-jira-issues-fixversion-manager)
 
   This action will add the supplied list of FixVersions to the list of Jira Issue Keys, or retrieve the current FixVersions from Jira.
-  This action is useful when a PR is merged to the main branch, and the main branch version is incrimented, and other open
+  This action is useful when a PR is merged to the main branch, the main branch version is incremented, and then a release is made, and other open PR's that weren't included in the release but should have can have their FixVersion automatically bumped
+  This action also allows you to align Jira Issue FixVersions to a GitHub Milestone so that it's easy to see which PRs are against which release version. 
   
-- 🌐 **Terraform IaC Repo**: Templates and modules for scalable and maintainable AWS infrastructure deployments.
+### 🌐 Terraform IaC Repo: Templates and modules for scalable and maintainable AWS infrastructure deployments.
+#### NOTE: These modules were written for Terraform 0.11
+- #### Terraform module for creating the AWS app mesh resources for ECS
+  🔗[bitflight-public/terraform-aws-app-mesh](https://github.com/bitflight-public/terraform-aws-app-mesh)
+- #### Terraform module that creates a lambda bot that ingests SNS messages and sends them to Slack
+  🔗[bitflight-public/terraform-aws-lambda-slack-bot](https://github.com/bitflight-public/terraform-aws-lambda-slack-bot)
+- #### Terraform module that adds an ECS service to a cluster with an empty task running Apache that runs on a port of your choice
+  🔗[bitflight-public/terraform-aws-ecs-service](https://github.com/bitflight-public/terraform-aws-ecs-service)
+- #### Terraform module that creates an AWS native 'serverless' module for building AMIs and publishing them
+  🔗[bitflight-public/terraform-aws-ecs-service](https://github.com/bitflight-public/terraform-aws-ssm-ami-bakery)
+- #### A Terraform module that creates an AWS CodePipeline that automates the deployment of your serverless application
+  🔗[bitflight-public/terraform-aws-codepipeline-cloudformation-lambda](https://github.com/bitflight-public/terraform-aws-codepipeline-cloudformation-lambda)
+- #### Many more modules I have written or contributed to [available here](https://github.com/orgs/bitflight-public/repositories?type=all)
   
-- 🐳 **Containerization Repo**: Dockerfiles and Kubernetes configurations for various application setups.
+<!-- ### 🐳 Containerization Repo: Dockerfiles and Kubernetes configurations for various application setups. -->
 
 ---
 
