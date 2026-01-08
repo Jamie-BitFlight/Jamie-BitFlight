@@ -7,7 +7,7 @@
 **Purpose:** Showcase DevOps/CI/CD/IaC expertise with links to external projects.
 
 **Key Facts:**
-- Single-file repository containing only README.md (108 lines, 9KB)
+- Single-file repository containing only README.md (108 lines)
 - Pure Markdown documentation, no code
 - No build process, dependencies, or tests
 - Size: ~196KB total
@@ -120,7 +120,7 @@ A: Ensure committed to `main` branch. GitHub displays README.md from main on pro
 ## Files in Repository
 
 **/ (root):**
-- README.md (9,057 bytes, 108 lines)
+- README.md (~9KB, 108 lines of markdown)
 
 **/.github/:**
 - copilot-instructions.md (this file)
