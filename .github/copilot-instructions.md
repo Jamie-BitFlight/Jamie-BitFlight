@@ -57,9 +57,9 @@
 
 ## GitHub Actions Workflows
 
-**One active workflow:** "Copilot coding agent" (path: `dynamic/copilot-swe-agent/copilot`)
-- Dynamically managed by GitHub Copilot
-- No manual intervention required
+**Note:** This repository does not contain `.github/workflows/` directory or workflow files.
+
+However, GitHub Copilot may create **dynamic workflows** (not stored in the repo) for automation tasks. These appear in the GitHub Actions UI but are externally managed and require no manual intervention.
 
 ## Git Operations
 
