@@ -68,24 +68,63 @@ A comprehensive set of pipelines, integrating GitHub Actions, Jenkins, and Jira 
     - **Tracing Functions** - creates functions that allow for toggling tracing on and off for shell debugging
     - **Yaml Functions** - creates functions for parsing and extracting data from YAML files
 - #### A GitHub Action for updating a Jira Issue Fixversion, or for updating the GitHub Milestone to match the FixVersion of the issue
-  🔗[bitflight-devops/shell-scripts](https://github.com/bitflight-devops/github-action-jira-issues-fixversion-manager)
+  🔗[bitflight-devops/github-action-jira-issues-fixversion-manager](https://github.com/bitflight-devops/github-action-jira-issues-fixversion-manager)
 
   This action will add the supplied list of FixVersions to the list of Jira Issue Keys, or retrieve the current FixVersions from Jira.
   This action is useful when a PR is merged to the main branch, the main branch version is incremented, and then a release is made, and other open PR's that weren't included in the release but should have can have their FixVersion automatically bumped
-  This action also allows you to align Jira Issue FixVersions to a GitHub Milestone so that it's easy to see which PRs are against which release version. 
+  This action also allows you to align Jira Issue FixVersions to a GitHub Milestone so that it's easy to see which PRs are against which release version.
+
+### 🐍 Python Development Utilities
+
+A collection of Python tools and utilities for development, documentation, and package management.
+
+- #### MkDocs Documentation Generator for Python Projects
+  🔗<a href="https://github.com/Jamie-BitFlight/mkapidocs">Jamie-BitFlight/mkapidocs</a>
+  
+    Zero-install MkDocs documentation generator for Python projects on GitLab. Auto-detects project features (C/C++, Typer CLIs, private registries), generates beautiful Material theme docs with API references, and sets up GitLab Pages deployment. Just download and run.
+- #### APT Registry Explorer
+  🔗<a href="https://github.com/Jamie-BitFlight/apt-registry-explorer">Jamie-BitFlight/apt-registry-explorer</a>
+  
+    A Python utility to validate apt registry endpoints to check for available distributions, channels, and packages without needing the apt-source set up, or root access.
+- #### Git Tree Project Structure to YAML
+  🔗<a href="https://github.com/Jamie-BitFlight/git-tree-project-structure-to-yaml">Jamie-BitFlight/git-tree-project-structure-to-yaml</a>
+  
+    Python utility that converts git tree project structures to YAML format for easy documentation and analysis.
+
+### 🤖 AI/ML Tools
+
+- #### Claude Skills Plugin
+  🔗<a href="https://github.com/Jamie-BitFlight/claude_skills">Jamie-BitFlight/claude_skills</a>
+  
+    Skills plugin for Anthropic's Claude Code. Extends Claude's capabilities with custom skills and integrations. (⭐ 11 stars, 1 fork)
+
+### ☁️ AWS Lambda & Automation Tools
+
+- #### Dynamic IOPS Manager
+  🔗<a href="https://github.com/Jamie-BitFlight/dynamic-iops">Jamie-BitFlight/dynamic-iops</a>
+  
+    AWS Lambda Function to dynamically modify EBS IOPS based on EC2 CloudWatch metrics, optimizing storage performance and costs.
+- #### S3 SSH Deployment Tool
+  🔗<a href="https://github.com/Jamie-BitFlight/s3-ssh-deployment">Jamie-BitFlight/s3-ssh-deployment</a>
+  
+    Watches an S3 bucket for new zip files, then automatically deploys the contents of the zip file to a web server via SSH.
   
 ### 🌐 Terraform IaC Repo: Templates and modules for scalable and maintainable AWS infrastructure deployments.
 #### NOTE: These modules were written for Terraform 0.11
 - #### Terraform module for creating the AWS app mesh resources for ECS
-  🔗[bitflight-public/terraform-aws-app-mesh](https://github.com/bitflight-public/terraform-aws-app-mesh)
+  🔗<a href="https://github.com/bitflight-public/terraform-aws-app-mesh">bitflight-public/terraform-aws-app-mesh</a>
 - #### Terraform module that creates a lambda bot that ingests SNS messages and sends them to Slack
-  🔗[bitflight-public/terraform-aws-lambda-slack-bot](https://github.com/bitflight-public/terraform-aws-lambda-slack-bot)
+  🔗<a href="https://github.com/bitflight-public/terraform-aws-lambda-slack-bot">bitflight-public/terraform-aws-lambda-slack-bot</a>
 - #### Terraform module that adds an ECS service to a cluster with an empty task running Apache that runs on a port of your choice
-  🔗[bitflight-public/terraform-aws-ecs-service](https://github.com/bitflight-public/terraform-aws-ecs-service)
+  🔗<a href="https://github.com/bitflight-public/terraform-aws-ecs-service">bitflight-public/terraform-aws-ecs-service</a>
 - #### Terraform module that creates an AWS native 'serverless' module for building AMIs and publishing them
-  🔗[bitflight-public/terraform-aws-ecs-service](https://github.com/bitflight-public/terraform-aws-ssm-ami-bakery)
+  🔗<a href="https://github.com/bitflight-public/terraform-aws-ssm-ami-bakery">bitflight-public/terraform-aws-ssm-ami-bakery</a>
 - #### A Terraform module that creates an AWS CodePipeline that automates the deployment of your serverless application
-  🔗[bitflight-public/terraform-aws-codepipeline-cloudformation-lambda](https://github.com/bitflight-public/terraform-aws-codepipeline-cloudformation-lambda)
+  🔗<a href="https://github.com/bitflight-public/terraform-aws-codepipeline-cloudformation-lambda">bitflight-public/terraform-aws-codepipeline-cloudformation-lambda</a>
+- #### Terraform module that configures CloudWatch SNS alerts for EC2 instances
+  🔗<a href="https://github.com/Jamie-BitFlight/terraform-aws-ec2-cloudwatch-sns-alarms">Jamie-BitFlight/terraform-aws-ec2-cloudwatch-sns-alarms</a>
+  
+    Comprehensive monitoring solution for EC2 instances with customizable CloudWatch alerts sent via SNS.
 - #### Many more modules I have written or contributed to [available here](https://github.com/orgs/bitflight-public/repositories?type=all)
   
 <!-- ### 🐳 Containerization Repo: Dockerfiles and Kubernetes configurations for various application setups. -->
