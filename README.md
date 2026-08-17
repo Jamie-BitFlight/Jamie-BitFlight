@@ -1,5 +1,5 @@
 # Jamie Nelson
-🌐 New Haven, Connecticut, USA  
+🌐 Melbourne, Australia
 
 ---
 
